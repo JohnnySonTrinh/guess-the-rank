@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Guess the Rank Game
 
-## Getting Started
+This is a simple web application where users watch a YouTube gameplay clip and guess the rank based on what they see. The app is built using **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Watch YouTube Videos**: Embedded YouTube video player where users can watch gameplay clips.
+- **Rank Guessing**: Users can guess the rank of the player based on the clip.
+- **Results Page**: Displays the user's guess and the correct rank.
+- **Responsive Design**: Built with Tailwind CSS to ensure the app is responsive across devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **React Hooks**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-username/guess-the-rank.git
+   cd guess-the-rank
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open http://localhost:3000 in your browser to see the app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## How It Works
 
-## Deploy on Vercel
+1. Home Page:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- The user is presented with instructions and a "Start Game" button.
+- Clicking the button takes the user to the Game page.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Game Page:
+
+- Users can watch a YouTube video and choose from multiple rank options.
+- After selecting a rank, they are redirected to the Results page.
+
+3. Results Page:
+
+- Displays the user's guess and the correct rank.
+
+## Customization
+
+To customize the game:
+
+- **Add YouTube Videos**: Replace the YOUR_VIDEO_ID in app/game/page.tsx with the actual YouTube video IDs of gameplay clips.
+- **Modify Rank Options**: Change the rank options (e.g., Bronze, Silver, Gold) in the app/game/page.tsx file.
+- **Change Correct Rank**: Update the correct rank in the handleGuess function in app/game/page.tsx.
+
+## Deployment
+
+This project is ready to be deployed on platforms like **Vercel**.
+
+1. Push your repository to GitHub.
+2. Connect your repository to [Vercel](https://vercel.com) for automatic deployment.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
